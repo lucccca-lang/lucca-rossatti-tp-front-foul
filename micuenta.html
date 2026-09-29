@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Cuenta - FOUL</title>
+</head>
+<body class="page-cuenta">
+
+    <header>
+        <div class="header-container">
+            <div class="header-brand">
+                <a href="index.html" class="logo-container">
+                    <img src="Imagenes/LogoPrincipal.png" alt="FOUL Logo" class="logo-img">
+                </a>
+                <h1 class="site-title">FOUL · Tienda deportiva</h1>
+            </div>
+
+            <div class="header-actions">
+                <a href="micuenta.html" class="header-btn" title="Mi Cuenta" aria-label="Mi Cuenta" aria-current="page"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a>
+            </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    Categorías
+                    <ul>
+                        <li><a href="calzado.html">Calzado</a></li>
+                        <li><a href="remeras.html">Remeras</a></li>
+                        <li><a href="pantalones.html">Pantalones</a></li>
+                        <li><a href="accesorios.html">Accesorios</a></li>
+                        <li><a href="otros.html">Otros</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Deportes
+                    <ul>
+                        <li><a href="futbol.html">Fútbol</a></li>
+                        <li><a href="basket.html">Básquet</a></li>
+                        <li><a href="tenis.html">Tenis</a></li>
+                        <li><a href="rugby.html">Rugby</a></li>
+                        <li><a href="hockey.html">Hockey</a></li>
+                        <li><a href="otros-deportes.html">Otros deportes</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Nosotros
+                    <ul>
+                        <li><a href="nosotros.html">Sobre FOUL</a></li>
+                        <li><a href="#sucursales">Nuestra sucursal</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Redes sociales
+                    <ul>
+                        <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                        <li><a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+    <nav class="breadcrumb" aria-label="Ruta de navegación">
+       <a href="index.html">Inicio</a> > <span>Mi Cuenta</span>
+    </nav>
+
+    <section class="account-container">
+
+        <h2>Mi Cuenta</h2>
+
+        <h3>Iniciar sesión</h3>
+
+        <form id="loginForm" class="auth-form">
+            <div class="form-group">
+                <label for="loginEmail">Email</label>
+                <input id="loginEmail" autocomplete="email" type="email" placeholder="ejemplo@email.com" required>
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Contraseña</label>
+                <input id="loginPassword" autocomplete="current-password" type="password" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="submit-btn">Ingresar</button>
+            <div class="form-footer">
+                <p><a href="recuperar.html">¿Olvidaste tu contraseña?</a></p>
+            </div>
+        </form>
+
+        <h3>Crear cuenta</h3>
+
+        <form id="registerForm" class="auth-form">
+            <div class="form-group">
+                <label for="regNombre">Nombre Completo</label>
+                <input id="regNombre" autocomplete="name" type="text" placeholder="Juan Pérez" required>
+            </div>
+            <div class="form-group">
+                <label for="regEmail">Email</label>
+                <input id="regEmail" autocomplete="email" type="email" placeholder="ejemplo@email.com" required>
+            </div>
+            <div class="form-group">
+                <label for="regPassword">Contraseña</label>
+                <input id="regPassword" autocomplete="new-password" type="password" placeholder="Crea una contraseña" required>
+            </div>
+            <div class="form-group">
+                <label for="regPassword2">Confirmar Contraseña</label>
+                <input id="regPassword2" autocomplete="new-password" type="password" placeholder="Repite la contraseña" required>
+            </div>
+            <button type="submit" class="submit-btn">Crear Cuenta</button>
+        </form>
+
+    </section>
+
+    </main>
+
+    <footer id="contacto">
+        <img src="Imagenes/LogoAlternativo.png" alt="FOUL" class="footer-logo">
+        <p>&copy; 2025 FOUL - Todo el deporte en un mismo lugar</p>
+        <p id="sucursales">📍 Condarco 5676, Buenos Aires, Argentina</p>
+        <p>📞 <a href="tel:1162261362">11 6226-1362</a> |  <a href="mailto:foul@gmail.com">foul@gmail.com</a></p>
+        <p class="footer-student">Alumno: Lucca Rossatti · Curso: 5°C · Año: 2026</p>
+    </footer>
+
+</body>
+</html>
