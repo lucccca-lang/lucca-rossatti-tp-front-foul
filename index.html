@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FOUL, tu tienda deportiva en Buenos Aires: calzado, remeras, pantalones y accesorios para fútbol, básquet, tenis, rugby y hockey.">
     <title>FOUL - Tu Tienda Deportiva</title>
+    <link rel="icon" type="image/png" href="Imagenes/LogoAlternativo.png">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
     <!-- Header -->
     <header>
     <div class="header-container">
@@ -13,7 +17,7 @@
             <a href="index.html" class="logo-container">
                 <img src="Imagenes/LogoPrincipal.png" alt="FOUL Logo" class="logo-img">
             </a>
-            <h1 class="site-title">FOUL · Tienda deportiva</h1>
+            <h1 class="site-title">Tienda deportiva</h1>
         </div>
         <div class="search-bar">
             <input type="text" placeholder="Buscar..." aria-label="Buscar productos">
@@ -50,10 +54,13 @@
             </div>
     </div>
 
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Mostrar u ocultar el menú">
+        <label for="menu-toggle" class="menu-btn"><span aria-hidden="true">☰</span> Menú</label>
+
         <nav class="main-nav" aria-label="Navegación principal">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li>
+                <li><a href="index.html" aria-current="page">Inicio</a></li>
+                <li tabindex="0">
                     Categorías
                     <ul>
                         <li><a href="calzado.html">Calzado</a></li>
@@ -63,7 +70,7 @@
                         <li><a href="otros.html">Otros</a></li>
                     </ul>
                 </li>
-                <li>
+                <li tabindex="0">
                     Deportes
                     <ul>
                         <li><a href="futbol.html">Fútbol</a></li>
@@ -74,14 +81,14 @@
                         <li><a href="otros-deportes.html">Otros deportes</a></li>
                     </ul>
                 </li>
-                <li>
+                <li tabindex="0">
                     Nosotros
                     <ul>
                         <li><a href="nosotros.html">Sobre FOUL</a></li>
                         <li><a href="#sucursales">Nuestra sucursal</a></li>
                     </ul>
                 </li>
-                <li>
+                <li tabindex="0">
                     Redes sociales
                     <ul>
                         <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
@@ -97,7 +104,7 @@
 
 
     <!-- Contenido principal -->
-    <main>
+    <main id="contenido">
 
     <!-- Banner Hero (presentación del sitio) -->
     <section class="hero-banner">
@@ -117,14 +124,18 @@
 <div class="promo-image"><img loading="lazy" src="Imagenes/Zapatilla.png" alt="Zapatillas Nike Quest 6"></div>
 <div class="promo-content">
 <h3>Zapatillas Nike Quest 6</h3>
+<p class="promo-description">Amortiguación y comodidad para correr y entrenar.</p>
 <span class="discount-badge">-40% OFF</span>
+<a href="calzado.html" class="btn">Ver más</a>
 </div>
 </div>
 <div class="promo-card">
 <div class="promo-image"><img loading="lazy" src="Imagenes/Remera.png" alt="Remeras Deportivas Adidas"></div>
 <div class="promo-content">
 <h3>Remeras Deportivas Adidas</h3>
+<p class="promo-description">Telas livianas de secado rápido para cada deporte.</p>
 <span class="discount-badge">-20% OFF</span>
+<a href="remeras.html" class="btn">Ver más</a>
 </div>
 </div>
 
@@ -133,7 +144,9 @@
 <div class="promo-image"><img loading="lazy" src="Imagenes/Short.webp" alt="Short Puma Hoops"></div>
 <div class="promo-content">
 <h3>Short Puma Hoops</h3>
+<p class="promo-description">Comodidad y libertad de movimiento en la cancha.</p>
 <span class="discount-badge">2x1</span>
+<a href="pantalones.html" class="btn">Ver más</a>
 </div>
 </div>
 
@@ -142,7 +155,9 @@
 <div class="promo-image"><img loading="lazy" src="Imagenes/Gafas.jpg" alt="Accesorios Deportivos"></div>
 <div class="promo-content">
 <h3>Accesorios Deportivos</h3>
+<p class="promo-description">Protección y estilo para completar tu equipo.</p>
 <span class="discount-badge">-30% OFF</span>
+<a href="accesorios.html" class="btn">Ver más</a>
 </div>
 </div>
 </div>
@@ -165,21 +180,27 @@
     <h2 class="section-title">Deportes</h2>
     <div class="sports-grid">
         <a href="futbol.html" class="sport-card">
+            <img loading="lazy" src="Imagenes/Futbol.png" alt="Pelota de fútbol" class="sport-img">
             <h3>Fútbol</h3>
         </a>
         <a href="basket.html" class="sport-card">
+            <img loading="lazy" src="Imagenes/Basket.png" alt="Pelota de básquet" class="sport-img">
             <h3>Básquet</h3>
         </a>
         <a href="tenis.html" class="sport-card">
+            <img loading="lazy" src="Imagenes/Tenis.png" alt="Raqueta de tenis" class="sport-img">
             <h3>Tenis</h3>
         </a>
         <a href="rugby.html" class="sport-card">
+            <img loading="lazy" src="Imagenes/Rugby.png" alt="Pelota de rugby" class="sport-img">
             <h3>Rugby</h3>
         </a>
         <a href="hockey.html" class="sport-card">
+            <img loading="lazy" src="Imagenes/Hockey.png" alt="Palo de hockey" class="sport-img">
             <h3>Hockey</h3>
         </a>
         <a href="otros-deportes.html" class="sport-card">
+            <img loading="lazy" src="Imagenes/Otros.png" alt="Otros deportes" class="sport-img">
             <h3>Otros</h3>
         </a>
     </div>
@@ -235,7 +256,7 @@
     <!-- Footer -->
     <footer id="contacto">
         <img src="Imagenes/LogoAlternativo.png" alt="FOUL" class="footer-logo">
-        <p>&copy; 2025 FOUL - Todo el deporte en un mismo lugar</p>
+        <p>&copy; 2026 FOUL - Todo el deporte en un mismo lugar</p>
         <p id="sucursales">📍 Condarco 5676, Buenos Aires, Argentina</p>
         <p>📞 <a href="tel:1162261362">11 6226-1362</a> |  <a href="mailto:foul@gmail.com">foul@gmail.com</a></p>
         <p class="footer-student">Alumno: Lucca Rossatti · Curso: 5°C · Año: 2026</p>

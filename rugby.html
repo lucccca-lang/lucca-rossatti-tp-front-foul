@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Productos de rugby en FOUL: camisetas, botines y pelotas oficiales.">
     <title>Rugby - FOUL</title>
+    <link rel="icon" type="image/png" href="Imagenes/LogoAlternativo.png">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
     <header>
         <div class="header-container">
             <div class="header-brand">
                 <a href="index.html" class="logo-container">
                     <img src="Imagenes/LogoPrincipal.png" alt="FOUL Logo" class="logo-img">
                 </a>
-                <h1 class="site-title">FOUL · Tienda deportiva</h1>
+                <h1 class="site-title">Tienda deportiva</h1>
             </div>
             <div class="search-bar">
                 <input type="text" placeholder="Buscar..." aria-label="Buscar productos">
@@ -40,10 +44,13 @@
             </div>
         </div>
 
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Mostrar u ocultar el menú">
+        <label for="menu-toggle" class="menu-btn"><span aria-hidden="true">☰</span> Menú</label>
+
         <nav class="main-nav" aria-label="Navegación principal">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li>
+                <li tabindex="0">
                     Categorías
                     <ul>
                         <li><a href="calzado.html">Calzado</a></li>
@@ -53,25 +60,25 @@
                         <li><a href="otros.html">Otros</a></li>
                     </ul>
                 </li>
-                <li>
+                <li tabindex="0">
                     Deportes
                     <ul>
                         <li><a href="futbol.html">Fútbol</a></li>
                         <li><a href="basket.html">Básquet</a></li>
                         <li><a href="tenis.html">Tenis</a></li>
-                        <li><a href="rugby.html">Rugby</a></li>
+                        <li><a href="rugby.html" aria-current="page">Rugby</a></li>
                         <li><a href="hockey.html">Hockey</a></li>
                         <li><a href="otros-deportes.html">Otros deportes</a></li>
                     </ul>
                 </li>
-                <li>
+                <li tabindex="0">
                     Nosotros
                     <ul>
                         <li><a href="nosotros.html">Sobre FOUL</a></li>
                         <li><a href="#sucursales">Nuestra sucursal</a></li>
                     </ul>
                 </li>
-                <li>
+                <li tabindex="0">
                     Redes sociales
                     <ul>
                         <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
@@ -86,10 +93,10 @@
     </header>
 
 
-    <main>
+    <main id="contenido">
 
     <nav class="breadcrumb" aria-label="Ruta de navegación">
-       <a href="index.html">Inicio</a> > <span>Rugby</span>
+       <a href="index.html">Inicio</a> > <span aria-current="page">Rugby</span>
     </nav>
 
     <section class="category-header">
@@ -153,7 +160,7 @@
 
     <footer id="contacto">
         <img src="Imagenes/LogoAlternativo.png" alt="FOUL" class="footer-logo">
-        <p>&copy; 2025 FOUL - Todo el deporte en un mismo lugar</p>
+        <p>&copy; 2026 FOUL - Todo el deporte en un mismo lugar</p>
         <p id="sucursales">📍 Condarco 5676, Buenos Aires, Argentina</p>
         <p>📞 <a href="tel:1162261362">11 6226-1362</a> |  <a href="mailto:foul@gmail.com">foul@gmail.com</a></p>
         <p class="footer-student">Alumno: Lucca Rossatti · Curso: 5°C · Año: 2026</p>
